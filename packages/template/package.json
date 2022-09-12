@@ -1,0 +1,16 @@
+{
+  "name": "@coding-exercises/template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "npm run clean:build; rm -rf node_modules",
+    "clean:build": "rm -rf dist; rm -rf coverage",
+    "lint": "eslint . --quiet --fix --ext .ts,.tsx",
+    "build": "npm run clean:build && npm run lint && tsc",
+    "start": "npm run build && node dist/src/index.js",
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC"
+}
