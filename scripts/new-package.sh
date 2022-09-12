@@ -15,7 +15,7 @@ package_folder="packages/${package_name}"
 
 cp -a "packages/template" "${package_folder}"
 
-sed -i 's/template/hello/g' "${package_folder}/package.json"
+sed -i "s/template/${package_name}/g" "${package_folder}/package.json"
 
 npm run bootstrap
 
