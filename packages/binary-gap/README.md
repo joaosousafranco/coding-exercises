@@ -20,7 +20,7 @@ N is an integer within the range [1..2,147,483,647]
 
 ## Time Limit
 
-- 120 minutes
+- 30 minutes
 
 ## Test inputs
 

@@ -41,7 +41,7 @@ In your solution, focus on correctness. The performance of your solution will no
 
 ## Time Limit
 
-- 120 minutes
+- 14 minutes
 
 ## Test inputs
 
