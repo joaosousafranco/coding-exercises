@@ -53,4 +53,4 @@ each element of array A is an integer within the range [−1,000..1,000].
 
 ## Test inputs
 
-- [2, 3, 1, 5] => 4
+- [3, 1, 2, 4, 3] => 1
