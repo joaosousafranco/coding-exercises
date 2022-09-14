@@ -1,5 +1,9 @@
 # Binary Gap
 
+## Credits
+
+<https://app.codility.com/programmers/lessons>
+
 ## Introduction
 
 A non-empty array A consisting of N integers is given. Array A represents numbers on a tape.
