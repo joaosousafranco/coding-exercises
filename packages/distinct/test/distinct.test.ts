@@ -1,0 +1,13 @@
+import { distinctValues } from '../src/distinct';
+
+it.each`
+  input                 | output
+  ${[]}                 | ${0}
+  ${[1]}                | ${1}
+  ${[1, 1]}             | ${1}
+  ${[2, 1, 1, 2, 3, 1]} | ${3}
+`('Build project hello $input', ({ input, output }) => {
+  const values = distinctValues(input);
+
+  expect(values).toEqual(output);
+});

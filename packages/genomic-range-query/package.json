@@ -1,0 +1,18 @@
+{
+  "name": "@coding-exercises/genomic-range-query",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run clean:build && npm run lint && tsc",
+    "clean": "npm run clean:build; rm -rf node_modules",
+    "clean:build": "rm -rf dist; rm -rf coverage",
+    "lint": "eslint . --quiet --fix --ext .ts,.tsx",
+    "start": "npm run build && node dist/src/index.js",
+    "test": "jest",
+    "test:cov": "jest --coverage",
+    "test:watch": "jest --watchAll"
+  }
+}
