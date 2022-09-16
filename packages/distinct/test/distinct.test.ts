@@ -6,7 +6,7 @@ it.each`
   ${[1]}                | ${1}
   ${[1, 1]}             | ${1}
   ${[2, 1, 1, 2, 3, 1]} | ${3}
-`('Build project hello $input', ({ input, output }) => {
+`('display distinct values $input', ({ input, output }) => {
   const values = distinctValues(input);
 
   expect(values).toEqual(output);
