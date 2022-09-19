@@ -4,6 +4,10 @@
 
 <https://app.codility.com/programmers/lessons>
 
+## Resources
+
+<https://medium.com/@deck451/codility-algorithm-practice-lesson-8-leader-task-2-equileader-a-python-approach-71dcbe88eeeb>
+
 ## Introduction
 
 A non-empty array A consisting of N integers is given.
