@@ -13,3 +13,5 @@ Coding exercises to prepare for technical interviews
 <https://www.freecodecamp.org/learn/coding-interview-prep/>
 
 <https://github.com/mre/the-coding-interview>
+
+<https://gist.github.com/jonataswalker/08187f5457fac4af1e86cf8c86647e23>
