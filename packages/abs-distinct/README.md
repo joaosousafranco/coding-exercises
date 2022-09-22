@@ -1,0 +1,53 @@
+# Exercise Name
+
+## Credits
+
+<https://app.codility.com/programmers/lessons>
+
+## Resources
+
+<https://medium.com/interviewnoodle/codility-algorithm-practice-lesson-15-caterpillar-method-task-1-absdistinct-a-python-approach-71f59a07e7d8>
+
+## Introduction
+
+A non-empty array A consisting of N numbers is given. The array is sorted in non-decreasing order. The absolute distinct count of this array is the number of distinct absolute values among the elements of the array.
+
+For example, consider array A such that:
+
+  A[0] = -5
+  A[1] = -3
+  A[2] = -1
+  A[3] =  0
+  A[4] =  3
+  A[5] =  6
+The absolute distinct count of this array is 5, because there are 5 distinct absolute values among the elements of this array, namely 0, 1, 3, 5 and 6.
+
+Write a function:
+
+function solution(A);
+
+that, given a non-empty array A consisting of N numbers, returns absolute distinct count of array A.
+
+For example, given array A such that:
+
+  A[0] = -5
+  A[1] = -3
+  A[2] = -1
+  A[3] =  0
+  A[4] =  3
+  A[5] =  6
+the function should return 5, as explained above.
+
+Write an efficient algorithm for the following assumptions:
+
+N is an integer within the range [1..100,000];
+each element of array A is an integer within the range [−2,147,483,648..2,147,483,647];
+array A is sorted in non-decreasing order.
+
+## Time Limit
+
+- 20 minutes
+
+## Test inputs
+
+- [-5, -3, -1, 0, 3, 6] => 5
