@@ -22,9 +22,12 @@ export const convert = (
       (c[1] === from && c[0] === originalTo),
   );
   if (conversion) {
-    return conversion[0] === from
-      ? amount * +conversion[2]
-      : amount / +conversion[2];
+    const result =
+      conversion[0] === from
+        ? amount * +conversion[2]
+        : amount / +conversion[2];
+
+    return Math.round(result * 1000) / 1000;
   }
 
   const nextConversions = currencies.filter(
