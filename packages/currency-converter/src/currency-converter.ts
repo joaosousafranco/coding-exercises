@@ -10,13 +10,21 @@ const currencies = [
   ['GBP', 'JPY', 154.28],
 ];
 
+let iterations = 0;
+
 export const convert = (
   amount: number,
   from: string,
   to: string,
   originalTo = to,
+  currentCurrencies = currencies,
 ) => {
-  const conversion = currencies.find(
+  iterations += 1;
+  if (iterations === 25) {
+    throw Error('to many iterations');
+  }
+
+  const conversion = currentCurrencies.find(
     (c) =>
       (c[0] === from && c[1] === originalTo) ||
       (c[1] === from && c[0] === originalTo),
@@ -30,25 +38,31 @@ export const convert = (
     return Math.round(result * 1000) / 1000;
   }
 
-  const nextConversions = currencies.filter(
-    (c) => (c[0] === from || c[1] === from) && c[0] !== from && c[1] !== to,
+  const nextConversions = currentCurrencies.filter(
+    (c) => (c[0] === from || c[1] === from) && !(c[0] === from && c[1] === to),
   );
-
   let nextAmount = null;
   for (let i = 0; i < nextConversions.length && nextAmount === null; i += 1) {
     const nextConversion = nextConversions[i];
+
+    const nextFrom =
+      nextConversion[0] === from ? nextConversion[1] : nextConversion[0];
+    const nextTo = originalTo;
+
     nextAmount =
       nextConversion[0] === from
         ? amount * +nextConversion[2]
         : amount / +nextConversion[2];
-
     nextAmount = convert(
       nextAmount,
-      `${nextConversion[0]}`,
-      `${nextConversion[1]}`,
+      `${nextFrom}`,
+      `${nextTo}`,
       originalTo,
+      currentCurrencies.filter(
+        (c) => c[0] !== nextConversion[0] && c[1] !== nextConversion[1],
+      ),
     );
   }
 
-  return nextAmount === null ? null : Math.round(nextAmount);
+  return nextAmount;
 };
