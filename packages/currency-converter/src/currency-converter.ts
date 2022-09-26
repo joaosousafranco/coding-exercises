@@ -10,8 +10,6 @@ const currencies = [
   ['GBP', 'JPY', 154.28],
 ];
 
-let iterations = 0;
-
 export const convert = (
   amount: number,
   from: string,
@@ -19,11 +17,6 @@ export const convert = (
   originalTo = to,
   currentCurrencies = currencies,
 ) => {
-  iterations += 1;
-  if (iterations === 25) {
-    throw Error('to many iterations');
-  }
-
   const conversion = currentCurrencies.find(
     (c) =>
       (c[0] === from && c[1] === originalTo) ||
@@ -53,14 +46,17 @@ export const convert = (
       nextConversion[0] === from
         ? amount * +nextConversion[2]
         : amount / +nextConversion[2];
+
+    const nextCurrencies = currentCurrencies.filter(
+      (c) => c[0] !== nextConversion[0] && c[1] !== nextConversion[1],
+    );
+
     nextAmount = convert(
       nextAmount,
       `${nextFrom}`,
       `${nextTo}`,
       originalTo,
-      currentCurrencies.filter(
-        (c) => c[0] !== nextConversion[0] && c[1] !== nextConversion[1],
-      ),
+      nextCurrencies,
     );
   }
 
