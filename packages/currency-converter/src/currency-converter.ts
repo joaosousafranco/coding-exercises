@@ -34,6 +34,7 @@ export const convert = (
   const nextConversions = currentCurrencies.filter(
     (c) => (c[0] === from || c[1] === from) && !(c[0] === from && c[1] === to),
   );
+
   let nextAmount = null;
   for (let i = 0; i < nextConversions.length && nextAmount === null; i += 1) {
     const nextConversion = nextConversions[i];
