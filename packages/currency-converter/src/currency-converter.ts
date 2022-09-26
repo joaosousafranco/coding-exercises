@@ -1,4 +1,3 @@
-/* eslint-disable no-loop-func */
 const currencies = [
   ['USD', 'EUR', 0.89],
   ['CAD', 'USD', 0.79],
