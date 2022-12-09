@@ -1,39 +1,47 @@
 {
-    "files.exclude": {
-      "packages/**/index.js": true,
-      "packages/**/index.js.map": true,
-      "packages/**/test/**/*.xml": true,
-      "node_modules": true,
-      "packages/**/src/*.js": true,
-      "packages/**/src/*.js.map": true,
-      "packages/**/src/**/*.js": true,
-      "packages/**/src/**/*.js.map": true,
-      "packages/**/test/**/*.js": true,
-      "packages/**/test/**/*.js.map": true,
-      "packages/**/dist": true,
-      "packages/**/node_modules": true,
-      "dist": true
-    },
-    "editor.tabSize": 2,
-    "typescript.preferences.quoteStyle": "single",
-    "files.insertFinalNewline": true,
-    "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
-    "editor.formatOnSave": true,
-    "[javascript]": {
-      "editor.formatOnSave": true
-    },
-    "[javascriptreact]": {
-      "editor.formatOnSave": true
-    },
-    "[typescript]": {
-      "editor.formatOnSave": true
-    },
-    "[typescriptreact]": {
-      "editor.formatOnSave": true
-    },
-    "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true
-    },
-    "javascript.preferences.importModuleSpecifier": "relative",
-    "typescript.preferences.importModuleSpecifier": "relative"
-  }
+  "files.exclude": {
+    "packages/**/index.js": true,
+    "packages/**/index.js.map": true,
+    "packages/**/test/**/*.xml": true,
+    "node_modules": true,
+    "packages/**/src/*.js": true,
+    "packages/**/src/*.js.map": true,
+    "packages/**/src/**/*.js": true,
+    "packages/**/src/**/*.js.map": true,
+    "packages/**/test/**/*.js": true,
+    "packages/**/test/**/*.js.map": true,
+    "packages/**/dist": true,
+    "packages/**/node_modules": true,
+    "dist": true
+  },
+  "editor.tabSize": 2,
+  "typescript.preferences.quoteStyle": "single",
+  "files.insertFinalNewline": true,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.formatOnSave": true
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": true
+  },
+  "[typescript]": {
+    "editor.formatOnSave": true
+  },
+  "[typescriptreact]": {
+    "editor.formatOnSave": true
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.organizeImports": true,
+    "source.sortMembers": true
+  },
+  "javascript.preferences.importModuleSpecifier": "relative",
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "jest.autoRun": "false"
+}
