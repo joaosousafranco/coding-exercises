@@ -1,4 +1,4 @@
-import { missingElement } from '../src/perm-missing-elem';
+import { missingElement } from '../src/perm-missing-elem-2';
 
 it.each`
   input           | output
