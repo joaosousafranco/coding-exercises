@@ -51,3 +51,4 @@ array A is sorted in non-decreasing order.
 ## Test inputs
 
 - [-5, -3, -1, 0, 3, 6] => 5
+- [-5, -4, -3, -1, 0, 3, 4, 4, 6] => 6
