@@ -3,6 +3,7 @@ import { convert } from '../src/currency-converter';
 it.each`
   amount      | from     | to       | output
   ${10}       | ${'USD'} | ${'EUR'} | ${8.9}
+  ${8.9}      | ${'EUR'} | ${'USD'} | ${10}
   ${20}       | ${'EUR'} | ${'JPY'} | ${2585.951}
   ${2585.951} | ${'JPY'} | ${'EUR'} | ${20}
   ${5}        | ${'JPY'} | ${'AUD'} | ${null}
