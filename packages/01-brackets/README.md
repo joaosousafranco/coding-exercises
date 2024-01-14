@@ -28,7 +28,7 @@ string S consists only of the following characters: "(", "{", "[", "]", "}" and/
 
 ## Time Limit
 
-- 30 minutes
+- 20 minutes
 
 ## Test inputs
 

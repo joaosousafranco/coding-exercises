@@ -27,6 +27,7 @@ it.each`
   ${1376796946} | ${5}
   ${1073741825} | ${29}
   ${1610612737} | ${28}
+  ${2147483647} | ${0}
 `(
   'Calculate the correct gap value $input',
   ({ input, output }) => {

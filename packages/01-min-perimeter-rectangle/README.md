@@ -32,7 +32,7 @@ N is an integer within the range [1..1,000,000,000].
 
 ## Time Limit
 
-- 20 minutes
+- 10 minutes
 
 ## Test inputs
 
