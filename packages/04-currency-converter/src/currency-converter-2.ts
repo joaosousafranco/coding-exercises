@@ -11,7 +11,7 @@ const currencies: Array<[string, string, number]> = [
   ['GBP', 'JPY', 154.28],
 ];
 
-function findConversionRate(from, to) {
+function findConversionRate(from: string, to: string) {
   // Check if direct conversion rate is available
   const directRate = currencies.find(
     (currency) => currency[0] === from && currency[1] === to,
@@ -44,11 +44,11 @@ function findConversionRate(from, to) {
   return null;
 }
 
-function roundToThreeDecimals(number) {
+function roundToThreeDecimals(number: number) {
   return Math.round(number * 1000) / 1000;
 }
 
-export function convert(amount, from, to) {
+export function convert(amount: number, from: string, to: string) {
   // Find the conversion rate between 'from' and 'to' currencies
   const conversionRate = findConversionRate(from, to);
 
