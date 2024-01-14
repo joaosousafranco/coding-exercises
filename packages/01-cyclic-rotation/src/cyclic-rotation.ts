@@ -1,5 +1,9 @@
 export const cyclicRotation = (list: number[], rotations: number) => {
-  if (list.length < 2 || list.length === rotations) {
+  if (
+    list.length < 2 ||
+    list.length === rotations ||
+    (list.length && rotations % list.length === 0)
+  ) {
     return list;
   }
 

@@ -11,8 +11,10 @@ it.each`
   ${[1, 2]}          | ${1}      | ${[2, 1]}
   ${[1, 2]}          | ${2}      | ${[1, 2]}
   ${[3, 8, 9, 7, 6]} | ${100}    | ${[3, 8, 9, 7, 6]}
+  ${[3, 8, 9, 7, 6]} | ${50}     | ${[3, 8, 9, 7, 6]}
+  ${[3, 8, 9, 7, 6]} | ${51}     | ${[6, 3, 8, 9, 7]}
 `(
-  'rotate array $list',
+  'rotate array $list $rotations',
   ({ list, rotations, expectedRotation }) => {
     const rotatedArray = cyclicRotation(list, rotations);
 
