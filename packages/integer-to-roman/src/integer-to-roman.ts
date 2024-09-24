@@ -1,5 +1,4 @@
 export const intToRoman = (num: number): string => {
-  // Define the mapping of Roman symbols to their values
   const romanSymbols: { value: number; symbol: string }[] = [
     { value: 1000, symbol: 'M' },
     { value: 900, symbol: 'CM' },
@@ -20,6 +19,7 @@ export const intToRoman = (num: number): string => {
 
   return romanSymbols.reduce((acc, { value, symbol }) => {
     let result = acc;
+
     while (numToConvert >= value) {
       result += symbol;
       numToConvert -= value;
