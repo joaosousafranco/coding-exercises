@@ -1,4 +1,4 @@
-import { minimalPerimeter } from '../src/min-perimeter-rectangle';
+import { minimalPerimeter } from '../src/min-perimeter-rectangle-exercise';
 
 it.each`
   input | output
