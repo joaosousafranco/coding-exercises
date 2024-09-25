@@ -1,4 +1,4 @@
-import { minimalJumps } from '../src/frog-jmp';
+import { minimalJumps } from '../src/frog-jmp-exercise';
 
 it.each`
   x     | y             | d     | output
