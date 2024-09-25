@@ -1,4 +1,4 @@
-import { binaryGap } from '../src/binary-gap';
+import { binaryGap } from '../src/binary-gap-exercise';
 
 it.each`
   input         | output
