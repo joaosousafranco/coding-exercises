@@ -1,4 +1,4 @@
-import { alecWinnerTurns } from '../src/cards-war';
+import { alecWinnerTurns } from '../src/cards-war-exercise';
 
 it.each`
   alec        | bob         | output

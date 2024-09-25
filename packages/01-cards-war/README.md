@@ -10,7 +10,7 @@ not used again in the current game.
 Let's consider a single game, where:
 Alec's deck consists of (from top to bottom): ace, ve, eight, six, queen, king;
 Bob's deck consists of (from top to bottom): jack, jack, six, ve, three, king.
-Alec wins the rst, third, fourth and fth turns. Bob wins the second turn. Note that nobody wins the last turn since both players draw the same
+Alec wins the first, third, fourth and fourth turns. Bob wins the second turn. Note that nobody wins the last turn since both players draw the same
 card (king).
 You have seen both players' decks prepared for the next duel. How many turns will Alec win in the game?
 Write a function:
