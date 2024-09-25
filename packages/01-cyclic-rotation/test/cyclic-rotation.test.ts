@@ -1,4 +1,4 @@
-import { cyclicRotation } from '../src/cyclic-rotation';
+import { cyclicRotation } from '../src/cyclic-rotation-exercise';
 
 it.each`
   list               | rotations | expectedRotation
