@@ -1,4 +1,4 @@
-import { isProperlyNested } from '../src/brackets';
+import { isProperlyNested } from '../src/brackets-solution';
 
 it.each`
   input         | output
