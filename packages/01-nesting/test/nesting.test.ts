@@ -1,4 +1,4 @@
-import { isProperlyNested } from '../src/nesting';
+import { isProperlyNested } from '../src/nesting-exercise';
 
 it.each`
   input           | output
