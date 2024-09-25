@@ -1,4 +1,4 @@
-import { distinctValues } from '../src/distinct';
+import { distinctValues } from '../src/distinct-exercise';
 
 it.each`
   input                 | output
