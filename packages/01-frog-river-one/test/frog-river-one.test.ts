@@ -1,4 +1,4 @@
-import { earliestJump } from '../src/frog-river-one';
+import { earliestJump } from '../src/frog-river-one-exercise';
 
 it.each`
   jumps | leafs                       | output
