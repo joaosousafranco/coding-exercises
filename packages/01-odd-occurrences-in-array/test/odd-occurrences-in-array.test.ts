@@ -1,4 +1,4 @@
-import { ocurrences } from '../src/odd-occurrences-in-array';
+import { ocurrences } from '../src/odd-occurrences-in-array-exercise';
 
 it.each`
   input                    | output
