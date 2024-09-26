@@ -1,4 +1,4 @@
-import { pairedPassingCars } from '../src/passing-cars';
+import { pairedPassingCars } from '../src/passing-cars-exercise';
 
 it.each`
   timeout | input                                                                          | output
