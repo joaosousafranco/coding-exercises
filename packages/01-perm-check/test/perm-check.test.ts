@@ -1,4 +1,4 @@
-import { isPermutation } from '../src/perm-check';
+import { isPermutation } from '../src/perm-check-exercise';
 
 it.each`
   input                              | output
