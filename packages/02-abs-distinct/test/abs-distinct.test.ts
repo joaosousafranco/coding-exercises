@@ -1,4 +1,4 @@
-import { distinctCount } from '../src/abs-distinct';
+import { distinctCount } from '../src/abs-distinct-exercise';
 
 it.each`
   input                              | output

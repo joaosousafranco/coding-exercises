@@ -1,10 +1,11 @@
-import { missingElement } from '../src/perm-missing-elem';
+import { missingElement } from '../src/perm-missing-elem-exercise';
 
 it.each`
   input           | output
   ${[2, 3, 1, 5]} | ${4}
   ${[2, 3, 4, 5]} | ${1}
   ${[2, 3, 1, 4]} | ${5}
+  ${[2, 3]}       | ${1}
   ${[]}           | ${1}
   ${[2]}          | ${1}
   ${[1]}          | ${2}

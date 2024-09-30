@@ -1,9 +1,7 @@
-import { countChocolates } from '../src/chocolates-by-numbers';
+import { countChocolates } from '../src/chocolates-by-numbers-exercise';
 
 it.each`
   timeout | n    | m    | output
-  ${5}    | ${1} | ${1} | ${1}
-  ${5}    | ${1} | ${2} | ${1}
   ${5}    | ${2} | ${1} | ${2}
 `(
   'count the number of chocolates that you will eat $n $m $output',

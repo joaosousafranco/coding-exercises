@@ -1,4 +1,4 @@
-import { totalFactors } from '../src/count-factors';
+import { totalFactors } from '../src/count-factors-exercise';
 
 it.each`
   input         | output

@@ -1,4 +1,4 @@
-import { convert } from '../src/currency-converter';
+import { convert } from '../src/currency-converter-exercise';
 
 it.each`
   amount      | from     | to       | output

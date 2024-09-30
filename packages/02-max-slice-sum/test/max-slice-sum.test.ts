@@ -1,4 +1,4 @@
-import { maxSliceSum } from '../src/max-slice-sum';
+import { maxSliceSum } from '../src/max-slice-sum-exercise';
 
 it.each`
   input               | output

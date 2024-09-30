@@ -1,4 +1,4 @@
-import { divisibles } from '../src/count-div';
+import { divisibles } from '../src/count-div-exercise';
 
 it.each`
   timeout | a      | b             | k             | output

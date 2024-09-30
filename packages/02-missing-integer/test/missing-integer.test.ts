@@ -1,4 +1,4 @@
-import { findMissingInteger } from '../src/missing-integer';
+import { findMissingInteger } from '../src/missing-integer-exercise';
 
 it.each`
   input                 | output
@@ -8,7 +8,7 @@ it.each`
   ${[1, 2, 3]}          | ${4}
   ${[-1, -3]}           | ${1}
   ${[-1, -3, 2, 3]}     | ${1}
-`('find missing integer $input.length $output', ({ input, output }) => {
+`('find missing integer $input to be $output', ({ input, output }) => {
   const startDate = +new Date();
 
   const missingInteger = findMissingInteger(input);

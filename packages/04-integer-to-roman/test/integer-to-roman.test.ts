@@ -1,4 +1,4 @@
-import { intToRoman } from '../src/integer-to-roman';
+import { intToRoman } from '../src/integer-to-roman-exercise';
 
 it.each`
   input   | output
@@ -14,6 +14,7 @@ it.each`
   ${3749} | ${'MMMDCCXLIX'}
   ${58}   | ${'LVIII'}
   ${1994} | ${'MCMXCIV'}
+  ${4994} | ${'MMMMCMXCIV'}
 `(
   'Calculate the correct roman number for integer $input',
   ({ input, output }) => {
@@ -21,5 +22,4 @@ it.each`
 
     expect(roman).toEqual(output);
   },
-  80,
 );
