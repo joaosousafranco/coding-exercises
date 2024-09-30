@@ -1,4 +1,4 @@
-import { findPrimeDivisors } from '../src/common-prime-divisors';
+import { findPrimeDivisors } from '../src/common-prime-divisors-exercise';
 
 it.each`
   a              | b              | output
